@@ -1,5 +1,6 @@
 {
     "name": "league-stat-viewer-demo",
+    "homepage": "https://your-username.github.io/league-stat-viewer-demo",
     "private": true,
     "version": "0.0.0",
     "type": "module",
