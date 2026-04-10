@@ -9,7 +9,7 @@ import { RouterProvider } from "react-router/dom";
 const router = createBrowserRouter(
     [
         {
-            index: true,
+            path: "/",
             Component: Root,
         },
         {
@@ -21,7 +21,6 @@ const router = createBrowserRouter(
     {
         basename: "/league-stat-viewer-demo",
     }
-
 );
 
 const root = document.getElementById("root")!;
