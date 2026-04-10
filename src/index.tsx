@@ -6,17 +6,23 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+    [
+        {
+            index: true,
+            Component: Root,
+        },
+        {
+            path: "/stats/:riotId",
+            loader: StatsLoader.loader,
+            Component: Stats,
+        },
+    ],
     {
-        index: true,
-        Component: Root,
-    },
-    {
-        path: "/stats/:riotId",
-        loader: StatsLoader.loader,
-        Component: Stats,
-    },
-]);
+        basename: "/league-stat-viewer-demo",
+    }
+
+);
 
 const root = document.getElementById("root")!;
 
