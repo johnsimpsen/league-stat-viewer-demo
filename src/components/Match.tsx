@@ -14,6 +14,8 @@ import { getMatchResult, getMatchResultText, getPlayerDataFromMatch, getRoleFrom
 import * as ReactRouter from "react-router";
 import styles from "./Match.module.css";
 
+const base = import.meta.env.VITE_ROUTER_BASE_URL;
+
 interface Props {
     data: Api.Match;
     playerPuuid: string;
@@ -82,7 +84,7 @@ export default function Match({ data, playerPuuid }: Props) {
                         className={styles.champIcon}
                         title={getChampionNameFromId(player.championName)}
                         src={
-                            "/assets/img/champion/" +
+                            base + "/assets/img/champion/" +
                             getChampionImageFromId(player.championName)
                         }
                         alt=""
@@ -96,7 +98,7 @@ export default function Match({ data, playerPuuid }: Props) {
                         className={styles.spellIcon}
                         id={styles.spell1}
                         src={
-                            "/assets/img/summonerSpells/" +
+                            base + "assets/img/summonerSpells/" +
                             player.summoner1Id +
                             ".png"
                         }
