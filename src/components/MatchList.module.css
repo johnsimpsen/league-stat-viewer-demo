@@ -1,0 +1,23 @@
+.matchList {
+    display: flex;
+    flex-direction: column;
+    view-transition-name: matchList;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    list-style-type: none;
+}
+
+.matchListItem {
+    margin-bottom: 17px;
+}
+
+#emptyListMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--sub-text-color);
+
+    margin-bottom: 15px;
+}

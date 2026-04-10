@@ -1,0 +1,90 @@
+.champStatListBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+
+    margin-bottom: 15px;
+
+    border-radius: var(--info-box-border-radius);
+
+    background-color: var(--info-box-color);
+
+    height: fit-content;
+}
+
+.championStatsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height:  var(--box-header-height);
+    width: var(--left-column-box-width);
+    font-weight: bold;
+
+    font-size: var(--header-font-size);
+    border-bottom: var(--page-background-color) 2px solid;
+}
+
+.filterSection {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+}
+
+.buttonFilterList {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.buttonFilterListItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 130px;
+    height: 43px;
+
+    border-radius: 10px;
+
+    color: var(--mid-text-color);
+    font-weight: 500;
+    font-size: 17px;
+
+    transition: 150ms;
+}
+
+.buttonFilterListItem:hover {
+    background-color: var(--gamemode-button-hover-color);
+}
+
+.activeFilterButton,
+.activeFilterButton:hover {
+    transition: 150ms;
+    background-color: var(--gamemode-button-selected-color);
+    color: var(--main-text-color);
+    font-weight: bold;
+}
+
+.champStatList {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    padding: 0;
+
+    width: 100%;
+
+    list-style-type: none;
+}
+
+.champStatListItem {
+    display: flex;
+
+    border-top: 2px solid var(--page-background-color);
+
+    padding: 6px;
+}

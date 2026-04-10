@@ -1,0 +1,103 @@
+@import "tailwindcss/preflight";
+
+:root {
+    /* Box sizes */
+    --left-column-box-width: 430px;
+    --match-box-width: 945px;
+
+    --box-header-height: 42px;
+
+    /* Colors */
+    --page-background-color: #191919;
+    --page-background-gradient1: #000000;
+    --page-background-gradient2: #24242b;
+    --info-box-color: #2d2d39;
+    --info-box-accent-color: #3a3a4a;
+
+    --main-text-color: #ffffff;
+    --mid-text-color: #ffffffd8;
+    --sub-text-color: #ffffffb2;
+    --super-sub-text-color: #ffffff66;
+
+    --winrate-bar-color-blue: #4676df;
+    --winrate-bar-color-red: #dc3c3c;
+
+    --death-color: #ff4f4f;
+
+    --load-button-color: #26262e9e;
+    --load-button-hover-color: #2A2A37b0;
+    --load-button-text-color: #ffffff8c;
+    --load-button-border-color: #ffffff50;
+
+    --gamemode-button-hover-color: #23232b;
+    --gamemode-button-selected-color: rgba(229, 229, 255, 0.15);
+
+    /* Border radii */
+    --large-image-border-radius: 11px;
+    --medium-image-border-radius: 7px;
+    --small-image-border-radius: 8px;
+    --progressbar-border-radius: 4px;
+
+    --info-box-border-radius: 8px;
+
+    --match-box-border-radius: 8px;
+
+    /* Font Sizes */
+    --header-font-size: 19px;
+}
+
+body {
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-image: linear-gradient(
+        to top,
+        var(--page-background-gradient1) 60%,
+        var(--page-background-gradient2) 100%
+    );
+    background-attachment: fixed;
+
+    color: var(--main-text-color);
+}
+
+code {
+    font-family:
+        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+::view-transition-new(matchList) {
+    animation-duration: 500ms;
+    animation-name: fadeInUp;
+}
+
+::view-transition-old(matchList) {
+    animation-duration: 500ms;
+    animation-name: fadeOutDown;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+    }
+}

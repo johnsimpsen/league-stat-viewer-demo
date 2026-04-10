@@ -1,0 +1,150 @@
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+}
+
+.rowInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.topProfile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 15px;
+}
+
+.columnsPlayerInfo {
+    width: var(--left-column-box-width);
+}
+
+.two {
+    margin: 15px;
+    margin-top: 0;
+    margin-left: 0;
+
+    border-radius: 8px;
+
+    background-color: var(--info-box-color);
+    height: 500px;
+}
+
+.columnsMatchInfo {
+    width: 926px;
+}
+
+.overallMatchInfo {
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+
+    background-color: var(--info-box-color);
+    width: var(--match-box-width) + 6;
+    height: 220px;
+}
+
+.errorMessage {
+    display: flex;
+    justify-content: center;
+    color: var(--sub-text-color);
+}
+
+.loadButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--load-button-text-color);
+
+    width: var(--match-box-width);
+    height: 50px;
+
+    background-color: var(--load-button-color);
+
+    border: var(--load-button-border-color) 2px solid;
+    border-radius: var(--match-box-border-radius);
+
+    transition-duration: .15s;
+}
+
+.loadButton:hover {
+    cursor: pointer;
+
+    background-color: var(--load-button-hover-color);
+    border-color: rgba(211, 211, 211, 0.66);
+
+    color: lightgray;
+
+    font-size: 103%;
+}
+
+.demoModeText {
+    color: red;
+    font-size: 30px;
+}
+
+.refreshButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 45px;
+    margin-bottom: 10px;
+
+    background-image: linear-gradient(to top, #1053ff, #5988ff);
+    border-radius: 6px;
+
+    transition: all .07s ease-in;
+}
+
+.refreshButton:hover {
+    cursor: pointer;
+    filter: brightness(0.75);
+}
+
+.updateDate {
+    font-size: 17px;
+    color: var(--sub-text-color);
+    margin-bottom: 10px;
+}
+
+.throbberContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.throbber {
+
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 7px solid var(--winrate-bar-color-blue);
+    animation:
+            l20-1 0.8s infinite linear alternate,
+            l20-2 1.6s infinite linear;
+
+    filter: opacity(0.9);
+}
+@keyframes l20-1{
+    0%    {clip-path: polygon(50% 50%,0       0,  50%   0%,  50%    0%, 50%    0%, 50%    0%, 50%    0% )}
+    12.5% {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100%   0%, 100%   0%, 100%   0% )}
+    25%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 100% 100%, 100% 100% )}
+    50%   {clip-path: polygon(50% 50%,0       0,  50%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+    62.5% {clip-path: polygon(50% 50%,100%    0, 100%   0%,  100%   0%, 100% 100%, 50%  100%, 0%   100% )}
+    75%   {clip-path: polygon(50% 50%,100% 100%, 100% 100%,  100% 100%, 100% 100%, 50%  100%, 0%   100% )}
+    100%  {clip-path: polygon(50% 50%,50%  100%,  50% 100%,   50% 100%,  50% 100%, 50%  100%, 0%   100% )}
+}
+@keyframes l20-2{
+    0%    {transform:scaleY(1)  rotate(0deg)}
+    49.99%{transform:scaleY(1)  rotate(135deg)}
+    50%   {transform:scaleY(-1) rotate(0deg)}
+    100%  {transform:scaleY(-1) rotate(-135deg)}
+}

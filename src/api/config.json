@@ -1,0 +1,5 @@
+{
+    "baseURL": "http://localhost:5000/api",
+    "defaultMatchCount": 20,
+    "currentGameVersion": "16"
+}

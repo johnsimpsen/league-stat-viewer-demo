@@ -1,0 +1,25 @@
+/* TODO: add a donut graph for displaying winrate */
+
+.donutGraph {
+}
+
+.container {
+    width: 80px;
+    height: 80px;
+}
+
+.ring {
+    stroke: var(--winrate-bar-color-red);
+    fill: transparent;
+}
+
+.segment {
+    --win-percent: 0;
+    --lose-percent: 100;
+
+    stroke: var(--winrate-bar-color-blue);
+    fill: transparent;
+
+    stroke-dasharray: var(--win-percent) var(--lose-percent);
+    transition: 2s ease;
+}

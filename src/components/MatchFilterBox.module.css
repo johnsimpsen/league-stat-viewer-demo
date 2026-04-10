@@ -1,0 +1,101 @@
+.matchFilterBox {
+    display: flex;
+
+    height: 60px;
+    width: var(--match-box-width);
+
+    background-color: var(--info-box-color);
+
+    border-radius: var(--match-box-border-radius);
+
+    margin-bottom: 15px;
+}
+
+.matchGamemodeList {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    margin-left: 15px;
+    color: var(--sub-text-color);
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: 150ms;
+}
+
+.matchGamemodeButton {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    --padding-size: 20px;
+    padding-left: var(--padding-size);
+    padding-right: var(--padding-size);
+}
+
+.matchGamemodeButton:hover {
+    background: var(--gamemode-button-hover-color);
+    transition: 100ms;
+}
+
+
+.activeGamemodeButton {
+    color: var(--main-text-color);
+    border-bottom: solid 3px var(--winrate-bar-color-blue);
+}
+
+.matchRoleList {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    margin-left: 30px;
+    color: var(--sub-text-color);
+
+    transition: 150ms;
+}
+
+.matchRoleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    --padding-size: 1px;
+    padding-left: var(--padding-size);
+    padding-right: var(--padding-size);
+}
+
+.roleIconContainer:hover {
+    background: var(--gamemode-button-hover-color);
+    transition: 100ms;
+}
+
+.activeRoleButton,
+.activeRoleButton:hover{
+    background: var(--gamemode-button-selected-color);
+}
+
+.roleIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 46px;
+
+}
+
+.roleButtonIcon {
+    width: 30px;
+    height: 30px;
+
+    filter: grayscale(100%) opacity(80%);
+}
+
+.activeRoleButtonIcon {
+    filter: grayscale(100%) brightness(130%);
+}
+

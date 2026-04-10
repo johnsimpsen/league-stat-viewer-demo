@@ -1,0 +1,87 @@
+.summonerProfile {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+}
+
+.summonerInfo {
+    display: flex;
+    position: relative;
+}
+
+.profileImageLevel {
+    display: inline-block;
+    position: relative;
+    flex-direction: row;
+}
+
+.profileImage {
+    display: flex;
+    flex-direction: row;
+
+    border: 5px solid;
+    border-color: inherit;
+    border-radius: 10%;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.summonerLevel {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border: 4px solid;
+    border-color: inherit;
+    border-radius: 18%;
+    background-color: #1c1c1c;
+
+    padding-left: 6px;
+
+    /* MEME CONDOM (condom repaired to prevent unwanted accessories) */
+
+    padding-right: 7px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+.playerProfileText {
+    display: flex;
+    flex-direction: column;
+    line-height: 4em;
+}
+
+.playerNameGroup {
+    display: flex;
+    align-items: baseline; /* aligns texts by their baselines */
+    gap: 10px;
+}
+
+.playerNameText {
+    margin: 0;
+    font-weight: bold;
+}
+
+#playerUsername {
+    margin-left: 20px;
+    color: white;
+    font-size: 60px;
+}
+
+#playerTagline {
+    color: var(--sub-text-color);
+    font-size: 45px;
+}
+
+.playerRankText {
+    margin-left: 20px;
+    color: inherit;
+    font-weight: bold;
+    font-size: 50px;
+}

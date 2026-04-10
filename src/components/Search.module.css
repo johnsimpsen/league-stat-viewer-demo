@@ -1,0 +1,23 @@
+.interactable {
+    border-radius: 8px;
+    background-color: var(--info-box-color);
+    padding: 0.1em;
+}
+
+.labelledInput {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    view-transition-name: search;
+    width: 25em;
+}
+
+.title {
+    align-self: center;
+    font-size: 25px;
+}

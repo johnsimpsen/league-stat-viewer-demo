@@ -1,0 +1,88 @@
+.rankedInfoBox {
+    display: flex;
+    flex-direction: column;
+
+    margin: 15px;
+    margin-top: 0;
+    margin-left: 0;
+
+    border-radius: var(--info-box-border-radius);
+
+    background-color: var(--info-box-color);
+}
+
+.rankedInfoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: var(--page-background-color) 2px solid;
+
+    height: var(--box-header-height);
+    font-weight: bold;
+
+    font-size: var(--header-font-size);
+}
+
+.rankedInfoBody {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.rankedEmblemContainer {
+    display: flex;
+    align-items: center;
+
+    margin-left: 6px;
+}
+
+.rankedEmblem {
+    width: 155px;
+    height: 155px;
+}
+
+.rankedText {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    font-size: 23px;
+    font-weight: bold;
+
+    height: 100px;
+
+    margin-top: 10px;
+}
+
+.rankedLevel {
+    width: 153px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.leaguePoints {
+    font-size: 20px;
+    text-align: right;
+    color: var(--sub-text-color);
+}
+
+.winrate {
+    display: flex;
+    flex-direction: column;
+
+    width: 85px;
+
+    text-align: right;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--sub-text-color);
+
+    margin-top: 7px;
+}
+
+.winsLosses {
+    font-weight: normal;
+}
