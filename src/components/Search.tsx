@@ -13,7 +13,7 @@ export default function Search({ viewTransition }: Props) {
     const matchCountRef = React.useRef<HTMLInputElement>(null);
 
     const navigate = ReactRouter.useNavigate();
-    const loader: StatsLoader.Data | null = ReactRouter.useLoaderData();
+    //const loader: StatsLoader.Data | null = ReactRouter.useLoaderData();
     const [searchParams] = ReactRouter.useSearchParams();
 
     function handleKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {

@@ -189,7 +189,7 @@ export const defaultTotalChampStats = {
 
 export interface AbsoluteChampStats {
     champion: string;
-    role: Role;
+    role: string;
     gameVersion: string;
     gameMode: string;
     totalKills: number;
