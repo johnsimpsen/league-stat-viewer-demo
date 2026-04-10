@@ -4,6 +4,8 @@ import styles from "./ChampionBox.module.css";
 import { getKDARatioColor } from "@/colorOptions.ts";
 import { getChampionImageFromId, getChampionNameFromId } from "@/championInfo.ts";
 
+import baseRoute from "../api/baseRoute.json"
+
 interface Props {
     data: Api.AbsoluteChampStats;
 }
@@ -52,7 +54,7 @@ const ChampionBox = ({ data }: Props) => {
                 <img
                     className={styles.champIcon}
                     src={
-                        "/assets/img/champion/" +
+                        baseRoute.baseRoute + "/assets/img/champion/" +
                         getChampionImageFromId(data.champion)
                     }
                     alt=""

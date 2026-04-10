@@ -19,6 +19,8 @@ interface Props {
     gameRoleFilter: string;
 }
 
+import baseRoute from "../api/baseRoute.json"
+
 export default function MatchOverview({ data, playerPuuid, gameTypeFilter, gameRoleFilter }: Props) {
 
     let matches = data;
@@ -160,7 +162,7 @@ export default function MatchOverview({ data, playerPuuid, gameTypeFilter, gameR
                                 ></RoleBarGraph>
                                 <img
                                     className={styles.roleIcon}
-                                    src={"/assets/img/role/" + getRoleFromIndex(index+1) + ".png"}
+                                    src={baseRoute.baseRoute + "/assets/img/role/" + getRoleFromIndex(index+1) + ".png"}
                                     alt={getRoleFromIndex(index+1)}
                                     title={getDisplayRoleName(getRoleFromIndex(index+1))}
                                 />
@@ -290,7 +292,7 @@ function RecentlyPlayedChamps({ matches, playerPuuid } : RecentlyPlayedChampsPro
                         className={styles.champIcon}
                         title={getChampionNameFromId(champ.championId)}
                         src={
-                            "/assets/img/champion/" +
+                            baseRoute.baseRoute + "/assets/img/champion/" +
                             getChampionImageFromId(champ.championId)
                         }
                         alt="" />

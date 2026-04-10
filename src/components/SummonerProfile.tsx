@@ -2,6 +2,8 @@ import * as Api from "@/api";
 import { getRankedColor } from "../colorOptions.ts";
 import styles from "./SummonerProfile.module.css";
 
+import baseRoute from "../api/baseRoute.json"
+
 interface Props {
     data?: Api.SummonerInfo;
 }
@@ -21,7 +23,7 @@ export default function SummonerProfile({ data }: Props) {
                         <img
                             className={styles.profileImage}
                             src={
-                                "/assets/img/profileIcon/" +
+                                baseRoute.baseRoute + "/assets/img/profileIcon/" +
                                 summonerInfo.profileIconId +
                                 ".png"
                             }

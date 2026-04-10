@@ -14,7 +14,7 @@ import { getMatchResult, getMatchResultText, getPlayerDataFromMatch, getRoleFrom
 import * as ReactRouter from "react-router";
 import styles from "./Match.module.css";
 
-const base = "/league-stat-viewer-demo";
+import baseRoute from "../api/baseRoute.json"
 
 interface Props {
     data: Api.Match;
@@ -84,7 +84,7 @@ export default function Match({ data, playerPuuid }: Props) {
                         className={styles.champIcon}
                         title={getChampionNameFromId(player.championName)}
                         src={
-                            base + "/assets/img/champion/" +
+                            baseRoute.baseRoute + "/assets/img/champion/" +
                             getChampionImageFromId(player.championName)
                         }
                         alt=""
@@ -98,7 +98,7 @@ export default function Match({ data, playerPuuid }: Props) {
                         className={styles.spellIcon}
                         id={styles.spell1}
                         src={
-                            base + "assets/img/summonerSpells/" +
+                            baseRoute.baseRoute + "/assets/img/summonerSpells/" +
                             player.summoner1Id +
                             ".png"
                         }
@@ -108,7 +108,7 @@ export default function Match({ data, playerPuuid }: Props) {
                         className={styles.spellIcon}
                         id={styles.spell2}
                         src={
-                            "/assets/img/summonerSpells/" +
+                            baseRoute.baseRoute + "/assets/img/summonerSpells/" +
                             player.summoner2Id +
                             ".png"
                         }
@@ -153,44 +153,44 @@ export default function Match({ data, playerPuuid }: Props) {
                     <img
                         className={styles.itemIcon}
                         id={styles.item0}
-                        src={"/assets/img/item/" + player.item0 + ".png"}
+                        src={baseRoute.baseRoute + "/assets/img/item/" + player.item0 + ".png"}
                         alt=""
                     />
                     <img
                         className={styles.itemIcon}
                         id={styles.item1}
-                        src={"/assets/img/item/" + player.item1 + ".png"}
+                        src={baseRoute.baseRoute + "/assets/img/item/" + player.item1 + ".png"}
                         alt=""
                     />
                     <img
                         className={styles.itemIcon}
                         id={styles.item2}
-                        src={"/assets/img/item/" + player.item2 + ".png"}
+                        src={baseRoute.baseRoute + "/assets/img/item/" + player.item2 + ".png"}
                         alt=""
                     />
 
                     <img
                         className={styles.itemIcon}
                         id={styles.trinket}
-                        src={"/assets/img/item/" + player.item6 + ".png"}
+                        src={baseRoute.baseRoute + "/assets/img/item/" + player.item6 + ".png"}
                         alt=""
                     />
                     <img
                         className={styles.itemIcon}
                         id={styles.item3}
-                        src={"/assets/img/item/" + player.item3 + ".png"}
+                        src={baseRoute.baseRoute + "/assets/img/item/" + player.item3 + ".png"}
                         alt=""
                     />
                     <img
                         className={styles.itemIcon}
                         id={styles.item4}
-                        src={"/assets/img/item/" + player.item4 + ".png"}
+                        src={baseRoute.baseRoute + "/assets/img/item/" + player.item4 + ".png"}
                         alt=""
                     />
                     <img
                         className={styles.itemIcon}
                         id={styles.item5}
-                        src={"/assets/img/item/" + player.item5 + ".png"}
+                        src={baseRoute.baseRoute + "/assets/img/item/" + player.item5 + ".png"}
                         alt=""
                     />
                 </div>
@@ -240,7 +240,7 @@ function Team({ players }: TeamProps) {
                     >
                         <img
                             className={styles.playerChampIcon}
-                            src={"/assets/img/champion/" +
+                            src={baseRoute.baseRoute + "/assets/img/champion/" +
                                 getChampionImageFromId(player.championName)}
                             alt={`Role: ${getRoleFromIndex(index)}, ${player.riotIdGameName}'s champion icon`}
                         />

@@ -2,6 +2,8 @@ import styles from "./MatchFilterBox.module.css";
 import React from "react";
 import { getDisplayRoleName } from "@/matchData.ts";
 
+import baseRoute from "../api/baseRoute.json"
+
 interface Props {
     updateMatchGamemodeFilter: Function;
     updateMatchRoleFilter: Function;
@@ -49,7 +51,7 @@ export default function MatchFilterBox({ updateMatchGamemodeFilter, updateMatchR
                         title={getDisplayRoleName(option)}
                         key={option}>
                         <div className={`${styles.roleIconContainer} ${roleFilter === option ? styles.activeRoleButton : ""}`}>
-                            <img src={"/assets/img/role/" + option + ".png"} alt={option} className={`${styles.roleButtonIcon} ${roleFilter === option ? styles.activeRoleButtonIcon : ""}`}/>
+                            <img src={baseRoute.baseRoute + "/assets/img/role/" + option + ".png"} alt={option} className={`${styles.roleButtonIcon} ${roleFilter === option ? styles.activeRoleButtonIcon : ""}`}/>
                         </div>
                     </button>
                 )}

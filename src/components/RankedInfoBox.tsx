@@ -6,6 +6,8 @@ interface Props {
     queueType: "Solo" | "Flex";
 }
 
+import baseRoute from "../api/baseRoute.json"
+
 export default function RankedInfoBox({ data, queueType }: Props) {
     const summonerInfo = data ?? Api.defaultSummonerInfo;
 
@@ -26,7 +28,7 @@ export default function RankedInfoBox({ data, queueType }: Props) {
                 <div className={styles.rankedEmblemContainer}>
                     <img
                         className={styles.rankedEmblem}
-                        src={"/assets/img/rank/" + queueData.tier + ".png"}
+                        src={baseRoute.baseRoute + "/assets/img/rank/" + queueData.tier + ".png"}
                         alt=""
                     />
                 </div>
