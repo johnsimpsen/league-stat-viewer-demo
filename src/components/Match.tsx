@@ -14,7 +14,7 @@ import { getMatchResult, getMatchResultText, getPlayerDataFromMatch, getRoleFrom
 import * as ReactRouter from "react-router";
 import styles from "./Match.module.css";
 
-const base = import.meta.env.VITE_ROUTER_BASE_URL;
+const base = "/league-stat-viewer-demo";
 
 interface Props {
     data: Api.Match;
