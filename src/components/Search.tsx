@@ -1,5 +1,5 @@
 import * as apiConfig from "@/api/config.json";
-import * as StatsLoader from "@/pages/Stats.loader";
+//import * as StatsLoader from "@/pages/Stats.loader";
 import React from "react";
 import * as ReactRouter from "react-router";
 import styles from "./Search.module.css";
