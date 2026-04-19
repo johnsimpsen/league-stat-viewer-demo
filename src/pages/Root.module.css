@@ -24,6 +24,10 @@
     color: red;
 }
 
+.link {
+    text-decoration: underline;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,

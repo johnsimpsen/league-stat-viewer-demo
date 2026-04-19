@@ -11,7 +11,14 @@ export default function Root() {
             <p id={styles.demoModeInfo}>Click search to see a preloaded profile on the website</p>
             <p id={styles.demoModeDisclaimer}>*DISCLAIMER: I do not own this profile, it was chosen for its role diversity!*</p>
             <Search viewTransition />
-            <a href="">Video Link for Non-Demo</a>
+            <a
+                className={styles.link}
+                target="_blank"
+                title="https://www.youtube.com/watch?v=tzHY0istDsk"
+                href="https://www.youtube.com/watch?v=tzHY0istDsk">
+
+                Video Link for Non-Demo
+            </a>
         </div>
     );
 }
