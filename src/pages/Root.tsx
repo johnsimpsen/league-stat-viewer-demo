@@ -17,7 +17,7 @@ export default function Root() {
                 title="https://www.youtube.com/watch?v=tzHY0istDsk"
                 href="https://www.youtube.com/watch?v=tzHY0istDsk">
 
-                Video Link for Non-Demo
+                Video Link for Demonstration
             </a>
         </div>
     );
