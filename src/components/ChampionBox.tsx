@@ -68,11 +68,11 @@ const ChampionBox = ({ data }: Props) => {
 
                     <div className={styles.KDAInfo}>
                         <div className={styles.averageKDA}>
-                            <span id={styles.kills}>{Number(averageKills.toFixed(1))}</span>
+                            <span id={styles.kills}>{Number(averageKills.toFixed(0))}</span>
                             <span>/</span>
-                            <span id={styles.deaths}>{Number(averageDeaths.toFixed(1))}</span>
+                            <span id={styles.deaths}>{Number(averageDeaths.toFixed(0))}</span>
                             <span>/</span>
-                            <span id={styles.assists}>{Number(averageAssists.toFixed(1))}</span>
+                            <span id={styles.assists}>{Number(averageAssists.toFixed(0))}</span>
                         </div>
 
                         <div>

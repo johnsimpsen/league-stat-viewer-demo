@@ -150,9 +150,9 @@ function Inner({ skeleton }: Props) {
                         />
 
 
-                        <div className={styles.two}>
-                            Temporary Box
-                        </div>
+                        {/*<div className={styles.two}>*/}
+                        {/*    Temporary Box*/}
+                        {/*</div>*/}
                     </div>
 
                     <div className={styles.columnsMatchInfo}>

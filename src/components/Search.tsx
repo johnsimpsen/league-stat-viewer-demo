@@ -27,7 +27,7 @@ export default function Search({ viewTransition }: Props) {
 
         //Navigate to demo page instead
         navigate(
-            "/stats/ItsJohnny5#gay"
+            "/stats/zzz#Nik"
         );
 
     }
